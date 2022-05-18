@@ -76,7 +76,7 @@
     var torusGeometry = new THREE.TorusGeometry( 3, 0.5, 6, 12 );
     var torusMaterial = new THREE. MeshPhongMaterial( { color: 0x0000ff } );
     var torus = new THREE.Mesh( torusGeometry, torusMaterial );
-    torus.position.set( 0, 3, -5);
+    torus.position.set( 0, 0, 0);
     scene.add( torus );
 
 
@@ -99,7 +99,7 @@
       cylinder.rotation.y -= 0.1;
 
       tours.rotation.y += 0.5;
-      
+
       renderer.render(scene, camera);
     };
     update();
