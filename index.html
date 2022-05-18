@@ -49,14 +49,14 @@
 
     // 箱を作成
     var geometry = new THREE.BoxGeometry(1, 1, 1);
-    var material = new THREE.MeshPhongMaterial({ color: 0x6699FF, roughness:0.5});
+    var material = new THREE.MeshPhongMaterial({ color: 0x0000ff});
     var box = new THREE.Mesh(geometry, material);
     box.position.set(2,0,0); //位置を指定
     scene.add(box);   // シーンに追加
     
     //なんかクネクネしてるやつ
     var torusKnotGeometry = new THREE.TorusKnotGeometry( 1.5, 0.3, 20, 6, 3, 2 );
-    var torusKnotMaterial = new THREE. MeshPhongMaterial( { color: 0x0000ff} );
+    var torusKnotMaterial = new THREE. MeshPhongMaterial( { color: 0x6699FF, roughness:0.5} );
     var torusKnot = new THREE.Mesh( torusKnotGeometry, torusKnotMaterial );
     torusKnot.position.set( 0, 0, -15 );
     scene.add( torusKnot );
