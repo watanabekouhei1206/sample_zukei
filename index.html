@@ -73,11 +73,11 @@
     cylinder.position.set( -4, 0, -5 );
     scene.add( cylinder );
 
-    var torusGeometry = new THREE.TorusGeometry( 01, 0.2, 6, 12 );
-    var torusMaterial = new THREE. MeshPhongMaterial( { color: 0x0000ff } );
-    var torus = new THREE.Mesh( torusGeometry, torusMaterial );
-    torus.position.set( 0, 0, 65);
-    scene.add( torus );
+    //var torusGeometry = new THREE.TorusGeometry( 01, 0.2, 6, 12 );
+    //var torusMaterial = new THREE. MeshPhongMaterial( { color: 0x0000ff } );
+    //var torus = new THREE.Mesh( torusGeometry, torusMaterial );
+    //torus.position.set( 0, 0, 65);
+    //scene.add( torus );
 
 
     // 初回実行
@@ -98,8 +98,8 @@
       cylinder.rotation.x += 0.1;
       cylinder.rotation.y -= 0.1;
 
-      torus.rotation.x += 0;
-      torus.rotation.y += 0.2;
+      //torus.rotation.x += 0;
+      //torus.rotation.y += 0.2;
 
       renderer.render(scene, camera);
     };
