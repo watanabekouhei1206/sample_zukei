@@ -73,10 +73,10 @@
     cylinder.position.set( -4, 0, -5 );
     scene.add( cylinder );
 
-    var torusGeometry = new THREE.TorusGeometry( 1, 0.2, 6, 12 );
+    var torusGeometry = new THREE.TorusGeometry( 0.5, 0.2, 6, 12 );
     var torusMaterial = new THREE. MeshPhongMaterial( { color: 0x0000ff } );
     var torus = new THREE.Mesh( torusGeometry, torusMaterial );
-    torus.position.set( 0, 0, 65);
+    torus.position.set( 0, 0, 0);
     scene.add( torus );
 
 
