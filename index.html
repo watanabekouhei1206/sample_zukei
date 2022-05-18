@@ -62,13 +62,13 @@
     scene.add( torusKnot );
 
     var coneGeometry = new THREE.ConeGeometry( 0.5, 1, 5 );
-    var coneMaterial = new THREE. MeshPhongMaterial( {color: 0x0000ff} );
+    var coneMaterial = new THREE. MeshPhongMaterial( {color: 0x00ffff} );
     var cone = new THREE.Mesh( coneGeometry, coneMaterial );
     cone.position.set( -2, -3, -5 );
     scene.add( cone );
 
     var cylinderGeometry = new THREE.CylinderGeometry( 0.3, 0.5, 1, 8 );
-    var cylinderMaterial = new THREE.MeshPhongMaterial( {color: 0x0000ff} );
+    var cylinderMaterial = new THREE.MeshPhongMaterial( {color: 0xff00ff} );
     var cylinder = new THREE.Mesh( cylinderGeometry, cylinderMaterial );
     cylinder.position.set( -4, 0, -5 );
     scene.add( cylinder );
